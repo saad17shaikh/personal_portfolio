@@ -7,7 +7,9 @@ const RightSideBar = () => {
   return (
     <aside className="h-[96vh] rounded-lg  sticky top-5  w-[9%] my-3 ">
       <section className="bg-transparent border border-gray-700 rounded-full flex items-center justify-center flex-col py-5 w-full space-y-10">
-        <div className="w-16 h-16 border-2 border-primary rounded-full"></div>
+        <div className="w-16 h-16 border-2 border-primary rounded-full flex items-center justify-center ">
+          <span className="text-2xl font-extrabold tracking-widest ">S</span>
+        </div>
         <div className="flex flex-col space-y-6">
           <SideBarIcons
             src="/house.png"
