@@ -8,6 +8,9 @@ const InfoSection = () => {
       <section className="w-fit rounded-3xl flex gap-2 p-2 px-6 items-center justify-center border border-gray-700">
         <FiUser />
         <span className="text-xs">INTRODUCTION</span>
+        <span className="text-xs">INTRODUCTION</span>
+        <span className="text-xs">INTRODUCTION</span>
+        <span className="text-xs">INTRODUCTION</span>
       </section>
     </main>
   );
