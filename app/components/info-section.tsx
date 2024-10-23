@@ -7,7 +7,7 @@ const InfoSection = () => {
     <main className="min-h-[95vh] bg-white/5 rounded-lg py-12 px-8">
       <section className="w-fit rounded-3xl flex gap-2 p-2 px-6 items-center justify-center border border-gray-700">
         <FiUser />
-        <span className="text-xs">INTRODUCE</span>
+        <span className="text-xs">INTRODUCTION</span>
       </section>
     </main>
   );
