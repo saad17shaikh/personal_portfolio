@@ -4,10 +4,15 @@ import SectionWrapper from "./components/section-wrapper";
 import { FiUser, FiUsers } from "react-icons/fi";
 import { PiListChecks } from "react-icons/pi";
 import LeftSidebar from "./components/left-sidebar";
-import { BsDownload } from "react-icons/bs";
-import { FaLocationArrow } from "react-icons/fa6";
+import { BsBriefcase, BsDownload } from "react-icons/bs";
+import { FaEnvelope, FaLocationArrow } from "react-icons/fa6";
+import { FaTasks, FaTools } from "react-icons/fa";
+import SkillsSection from "./components/skill-section";
+import ContactForm from "./components/contact-form";
+
 
 export default function Home() {
+  
   return (
     <>
       <main className=" bg-[#0e1217] flex gap-5 w-full px-6">
@@ -116,15 +121,117 @@ export default function Home() {
               </div>
             </main>
           </SectionWrapper>
-          <section className="min-h-[80vh]">section 1</section>
-          <section className="min-h-[80vh]">section 1</section>
-          <section className="min-h-[80vh]">section 1</section>
-          <section className="min-h-[80vh]">section 1</section>
+
+          {/* Professional Experience Section */}
+          <SectionWrapper
+            section_name="Experience"
+            main_icon={<BsBriefcase className="text-primary" />}
+          >
+            <main className="space-y-7">
+              <p className="text-4xl font-bold tracking-wide">
+                PROFESSIONAL <span className="text-primary">EXPERIENCE</span>
+              </p>
+              <main className="space-y-3">
+                <div className="flex justify-between border-b border-gray-500">
+                  <p className="text-xl tracking-wider font-semibold text-primary">
+                    SOFTWARE ENGINEER
+                  </p>
+                  <p className="text-sm text-primary">NOV 2023 - NOV 2024</p>
+                </div>
+                <p className="text-xl tracking-wider font-semibold">
+                  TechlogixIT Services
+                </p>
+                <>
+                  <div className="space-y-2">
+                    <p className="font-semibold tracking-wider text-primary">
+                      1. FREIGHT AUDIT MANAGEMENT SYSTEM
+                    </p>
+                    <ul className="space-y-1 ">
+                      <li>
+                        - Collaborated with a team to develop a Freight Audit
+                        Processing for a client, handling complex business and
+                        improving business efficiency.
+                      </li>
+                      <li>
+                        - Contributed to frontend and backend development
+                        creating RESTFUL APIs with ExpressJS. Also played a key
+                        role in designing scalable and efficient database
+                        structure to support seamless operations and replaced
+                        the legacy system.
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="space-y-2">
+                    <p className="tracking-wider font-semibold text-primary">
+                      2. HR MANAGEMENT SYSTEM
+                    </p>
+                    <ul className="space-y-1">
+                      <li>
+                        - Developed a Saas-based HRMS product using NextJs,
+                        NodeJS and PostgresSQL with prisma which replaced
+                        outdated system with improved speed and added some more
+                        features like overtime attendance and leave management.
+                      </li>
+                      <li>
+                        - This application increased efficiency and user
+                        adoption internally, and also generated sales by selling
+                        it to other local businesses.
+                      </li>
+                    </ul>
+                  </div>
+                </>
+              </main>
+            </main>
+          </SectionWrapper>
+          <SectionWrapper
+            main_icon={<FaTools className="w-4 h-4 text-primary" />}
+            section_name="SKILLS"
+          >
+            <main className="space-y-7">
+              <p className="text-4xl font-bold tracking-wide">
+                MY <span className="text-primary">SKILLS</span>
+              </p>
+              <SkillsSection />
+            </main>
+          </SectionWrapper>
+          {/* Projects */}
+          {/* <SectionWrapper
+            main_icon={<FaTasks  className="w-4 h-4 text-primary" />}
+            section_name="PROJECTS"
+          >
+            <main className="space-y-7">
+              <p className="text-4xl font-bold tracking-wide">
+                PERSONAL <span className="text-primary">PROJECTS</span>
+              </p>
+              
+            </main>
+          </SectionWrapper> */}
+
+          {/* Contact Me Form */}
+          <SectionWrapper
+            main_icon={<FaEnvelope className="w-4 h-4 text-primary" />}
+            section_name="CONTACT ME"
+          >
+            <main className="space-y-7">
+              <p className="text-4xl font-bold tracking-wide">
+                CONTACT <span className="text-primary">ME</span>
+              </p>
+              <main className="">
+                <ContactForm />
+              </main>
+              <main className="p-2 bg-white/10 rounded-xl">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.99640985196!2d-122.52000190459079!3d37.75780703827831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1733276092560!5m2!1sen!2sus"
+                  className="w-full h-[40vh] rounded-lg"
+                  loading="lazy"
+                />
+              </main>
+            </main>
+           
+          </SectionWrapper>
         </section>
+
         {/* Right section */}
-        {/* <aside className="h-[96vh] rounded-lg  sticky top-3 bg-gray-700 w-[8%] my-3">
-          Left side section
-        </aside> */}
         <RightSideBar />
       </main>
     </>

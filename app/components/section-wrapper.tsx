@@ -15,7 +15,7 @@ const SectionWrapper = ({
     <main className=" bg-white/5 rounded-lg py-12 px-8 space-y-5">
       <section className="w-fit rounded-3xl flex gap-2 p-2 px-6 items-center justify-center border border-gray-700">
         {main_icon}
-        <span className="text-xs">{section_name}</span>
+        <span className="text-xs uppercase tracking-wider">{section_name}</span>
       </section>
       <div>{children}</div>
     </main>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Playpen_Sans } from "next/font/google";
+import toast, { Toaster } from "react-hot-toast";
 
 const inter = Playpen_Sans({
   subsets: ["latin"],
@@ -19,7 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased text-white/90`}>{children}</body>
+      <body className={`${inter.className} antialiased text-white/90`}>
+        {children}
+
+        <Toaster />
+      </body>
     </html>
   );
 }
