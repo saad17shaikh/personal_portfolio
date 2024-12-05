@@ -4,9 +4,9 @@ import SectionWrapper from "./components/section-wrapper";
 import { FiUser, FiUsers } from "react-icons/fi";
 import { PiListChecks } from "react-icons/pi";
 import LeftSidebar from "./components/left-sidebar";
-import { BsBriefcase, BsDownload } from "react-icons/bs";
+import { BsBriefcase } from "react-icons/bs";
 import { FaEnvelope, FaLocationArrow } from "react-icons/fa6";
-import { FaTasks, FaTools } from "react-icons/fa";
+import {  FaTools } from "react-icons/fa";
 import SkillsSection from "./components/skill-section";
 import ContactForm from "./components/contact-form";
 

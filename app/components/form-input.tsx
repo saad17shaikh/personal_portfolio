@@ -5,7 +5,7 @@ interface FormInputProps {
   errors: any;
   name: string;
 }
-const FormInput = ({ register, label, type, errors, name }: FormInputProps) => {
+const FormInput = ({ register,  type, errors, name }: FormInputProps) => {
   return (
     <>
       <div className="flex flex-col space-y-2">
