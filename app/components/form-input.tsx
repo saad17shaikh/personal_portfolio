@@ -5,7 +5,7 @@ interface FormInputProps {
   errors: any;
   name: string;
 }
-const FormInput = ({ register,  type, errors, name }: FormInputProps) => {
+const FormInput = ({ register, type, errors, name }: FormInputProps) => {
   return (
     <>
       <div className="flex flex-col space-y-2">
@@ -13,7 +13,7 @@ const FormInput = ({ register,  type, errors, name }: FormInputProps) => {
         <input
           type={type}
           {...register(name)}
-          className="p-2 rounded-lg  bg-transparent border-gray-500 border text-sm text-primary focus:outline outline-primary" 
+          className="p-2 rounded-lg  bg-transparent border-gray-500 border text-sm text-primary focus:outline outline-primary"
           placeholder={name}
         />
         {errors && (

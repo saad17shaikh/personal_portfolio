@@ -3,7 +3,7 @@ import { BsDownload } from "react-icons/bs";
 
 const LeftSidebar = () => {
   return (
-    <aside className="h-[93vh] sticky top-5 w-[25%] ">
+    <aside className="h-[93vh] sticky top-5 w-[25%] lg:block hidden">
       <section className="flex flex-col space-y-5 h-full w-full rounded-lg bg-white/5 py-5 px-2">
         {/* First Section with Image Name and designation */}
         <section className="w-full flex items-center justify-center flex-col space-y-2">

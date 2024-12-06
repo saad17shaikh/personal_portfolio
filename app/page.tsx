@@ -6,26 +6,30 @@ import { PiListChecks } from "react-icons/pi";
 import LeftSidebar from "./components/left-sidebar";
 import { BsBriefcase } from "react-icons/bs";
 import { FaEnvelope, FaLocationArrow } from "react-icons/fa6";
-import {  FaTools } from "react-icons/fa";
+import { FaTools } from "react-icons/fa";
 import SkillsSection from "./components/skill-section";
 import ContactForm from "./components/contact-form";
-
+import Navbar from "./components/navbar";
 
 export default function Home() {
-  
   return (
     <>
-      <main className=" bg-[#0e1217] flex gap-5 w-full px-6">
+      <Navbar />
+      <main className=" bg-[#0e1217] flex gap-5 w-full sm:px-6">
         {/* Left section */}
         <LeftSidebar />
         {/* Center section */}
-        <section className=" min-h-screen w-full grid grid-cols-1 py-5 px-4 space-y-4">
+        <section className=" min-h-screen w-full grid grid-cols-1 py-5 sm:px-4 gap-y-4">
+          {/* Only visible in mobile view */}
+          {/* <div className=" lg:hidden bg-white h-[2rem]" >
+            sa
+          </div> */}
           {/* IntroSection */}
           <SectionWrapper
             main_icon={<FiUser className="text-primary" />}
             section_name="INTRODUCTION"
           >
-            <section className="grid grid-cols-2 gap-5">
+            <section className="grid  sm:grid-cols-2 gap-5">
               <div className="space-y-7">
                 <div className="space-y-3">
                   <p className="capitalize font-extrabold text-5xl tracking-wide">
@@ -42,7 +46,7 @@ export default function Home() {
                     applications.
                   </p>
                 </div>
-                <div className="flex gap-5">
+                <div className="flex flex-col items-start sm:flex-row gap-3 sm:gap-5">
                   <div className="flex items-center justify-center gap-2">
                     <PiListChecks className="text-primary" />
                     <p className="text-sm tracking-wide">Open to work</p>
@@ -54,14 +58,14 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <button className=" bg-primary  px-10 rounded-full py-3 font-semibold tracking-wider flex justify-center items-center gap-2 hover:bg-secondary">
+                  <button className=" bg-primary px-10 rounded-full py-3 font-semibold tracking-wider flex justify-center items-center gap-2 hover:bg-secondary">
                     Hire Me{" "}
                     <FaLocationArrow className="w-5 h-5 font-semibold " />
                   </button>
                 </div>
               </div>
 
-              <div className="flex items-center justify-center h-full w-full relative ">
+              <div className="hidden sm:flex items-center justify-center sm:h-full sm:w-full relative ">
                 <Image
                   alt=""
                   src={"/image02.jpg"}
@@ -203,7 +207,7 @@ export default function Home() {
               <p className="text-4xl font-bold tracking-wide">
                 PERSONAL <span className="text-primary">PROJECTS</span>
               </p>
-              
+
             </main>
           </SectionWrapper> */}
 
@@ -227,7 +231,6 @@ export default function Home() {
                 />
               </main>
             </main>
-           
           </SectionWrapper>
         </section>
 
