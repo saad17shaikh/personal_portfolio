@@ -21,33 +21,33 @@ const RightSideBar = () => {
             src="/programmer.png"
             height={25}
             width={25}
-            hover_text="Home"
+            hover_text="About"
           />
           <SideBarIcons
             src="/skill.png"
             height={25}
             width={25}
-            hover_text="Home"
+            hover_text="Experience"
           />
           <SideBarIcons
             src="/working.png"
             height={22}
             width={22}
-            hover_text="Home"
+            hover_text="Skills"
           />
           <SideBarIcons
             src="/work-2.png"
             height={22}
             width={22}
-            hover_text="Home"
+            hover_text="Projects"
           />
           <SideBarIcons
             src="/programmer.png"
             height={25}
             width={25}
-            hover_text="Home"
+            hover_text="Contact"
           />
-          <SideBarIcons
+          {/* <SideBarIcons
             src="/skill.png"
             height={25}
             width={25}
@@ -64,10 +64,9 @@ const RightSideBar = () => {
             height={22}
             width={22}
             hover_text="Home"
-          />
+          /> */}
         </div>
         <div className=" rounded-full border border-gray-700 flex items-center justify-center p-3">
-          {/* <SideBarIcons src="/link.png" height={22} width={22} hover_text="Home"/> */}
           <SocialLinks />
         </div>
       </section>

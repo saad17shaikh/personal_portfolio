@@ -27,13 +27,13 @@ const SkillsSection = () => {
       <MarqueeComp title="LANGUAGES">
         <MarqueeIcon
           skill_icon={
-            <FaHtml5 className="w-16 h-16 text-orange-500 cursor-pointer" />
+            <SiJavascript className="w-8 h-8 lg:w-16 lg:h-16 text-yellow-500 cursor-pointer" />
           }
           skill_name="JavaScript"
         />
-        <MarqueeIcon
+        {/* <MarqueeIcon
           skill_icon={
-            // <FaHtml5 className="w-16 h-16 text-orange-500 cursor-pointer" />
+            // <FaHtml5 className="w-8 h-8 lg:w-16 lg:h-16 text-orange-500 cursor-pointer" />
             <Image
               src={"/python.png"}
               alt="Python Logo"
@@ -42,37 +42,37 @@ const SkillsSection = () => {
             />
           }
           skill_name="Python"
-        />
+        /> */}
       </MarqueeComp>
       {/* Frontend*/}
       <MarqueeComp title="FRONTEND">
         <MarqueeIcon
           skill_icon={
-            <FaHtml5 className="w-16 h-16 text-orange-500 cursor-pointer" />
+            <FaHtml5 className="w-8 h-8 lg:w-16 lg:h-16 text-orange-500 cursor-pointer" />
           }
           skill_name="HTML"
         />
         <MarqueeIcon
           skill_icon={
-            <FaCss3Alt className="w-16 h-16 text-yellow-500 cursor-pointer" />
+            <FaCss3Alt className="w-8 h-8 lg:w-16 lg:h-16 text-yellow-500 cursor-pointer" />
           }
           skill_name="CSS"
         />
         <MarqueeIcon
           skill_icon={
-            <SiJavascript className="w-16 h-16 text-yellow-500 cursor-pointer" />
+            <SiJavascript className="w-8 h-8 lg:w-16 lg:h-16 text-yellow-500 cursor-pointer" />
           }
           skill_name="JavaScript"
         />
         <MarqueeIcon
           skill_icon={
-            <FaReact className="w-16 h-16 text-cyan-500 cursor-pointer" />
+            <FaReact className="w-8 h-8 lg:w-16 lg:h-16 text-cyan-500 cursor-pointer" />
           }
           skill_name="React JS"
         />
         <MarqueeIcon
           skill_icon={
-            <RiNextjsFill className="w-16 h-16 text-black cursor-pointer" />
+            <RiNextjsFill className="w-8 h-8 lg:w-16 lg:h-16 text-black cursor-pointer" />
           }
           skill_name="Next JS"
         />
@@ -81,13 +81,13 @@ const SkillsSection = () => {
       <MarqueeComp title="BACKEND">
         <MarqueeIcon
           skill_icon={
-            <FaNode className="w-16 h-16 text-green-600 cursor-pointer" />
+            <FaNode className="w-8 h-8 lg:w-16 lg:h-16 text-green-600 cursor-pointer" />
           }
           skill_name="Node JS"
         />
         <MarqueeIcon
           skill_icon={
-            <SiExpress className="w-16 h-16 text-white cursor-pointer" />
+            <SiExpress className="w-8 h-8 lg:w-16 lg:h-16 text-white cursor-pointer" />
           }
           skill_name="Express JS"
         />
@@ -96,38 +96,38 @@ const SkillsSection = () => {
       <MarqueeComp title="DATABASE">
         <MarqueeIcon
           skill_icon={
-            <SiMysql className="w-16 h-16 text-sky-600 cursor-pointer" />
+            <SiMysql className="w-8 h-8 lg:w-16 lg:h-16 text-sky-600 cursor-pointer" />
           }
           skill_name="SQL"
         />
         <MarqueeIcon
           skill_icon={
-            <BiLogoPostgresql className="w-16 h-16 text-blue-800 cursor-pointer" />
+            <BiLogoPostgresql className="w-8 h-8 lg:w-16 lg:h-16 text-blue-800 cursor-pointer" />
           }
           skill_name="PostgreSQL"
         />
 
         <MarqueeIcon
           skill_icon={
-            <DiMongodb className="w-16 h-16 text-green-600 cursor-pointer" />
+            <DiMongodb className="w-8 h-8 lg:w-16 lg:h-16 text-green-600 cursor-pointer" />
           }
           skill_name="Mongo DB"
         />
         <MarqueeIcon
           skill_icon={
-            <FaDatabase className="w-16 h-16 text-white cursor-pointer" />
+            <FaDatabase className="w-8 h-8 lg:w-16 lg:h-16 text-white cursor-pointer" />
           }
           skill_name="Database Design"
         />
         <MarqueeIcon
           skill_icon={
-            <SiPrisma className="w-16 h-16 text-purple-800 cursor-pointer" />
+            <SiPrisma className="w-8 h-8 lg:w-16 lg:h-16 text-purple-800 cursor-pointer" />
           }
           skill_name="Prisma ORM"
         />
         {/* <MarqueeIcon
           skill_icon={
-            <FaHtml5 className="w-16 h-16 text-orange-500 cursor-pointer" />
+            <FaHtml5 className="w-8 h-8 lg:w-16 lg:h-16 text-orange-500 cursor-pointer" />
           }
           skill_name="Mongoose"
         /> */}
@@ -136,13 +136,13 @@ const SkillsSection = () => {
       <MarqueeComp title="OTHER SKILLS">
         <MarqueeIcon
           skill_icon={
-            <FaEye className="w-16 h-16 text-orange-500 cursor-pointer" />
+            <FaEye className="w-8 h-8 lg:w-16 lg:h-16 text-orange-500 cursor-pointer" />
           }
           skill_name="Attention to Detail"
         />
         <MarqueeIcon
           skill_icon={
-            <FaCogs className="w-16 h-16 text-orange-500 cursor-pointer" />
+            <FaCogs className="w-8 h-8 lg:w-16 lg:h-16 text-orange-500 cursor-pointer" />
           }
           skill_name="Management"
         />
@@ -151,19 +151,19 @@ const SkillsSection = () => {
       <MarqueeComp title="OTHER TECHNICAL SKILLS">
         <MarqueeIcon
           skill_icon={
-            <FaFileWord className="w-16 h-16 text-blue-500 cursor-pointer" />
+            <FaFileWord className="w-8 h-8 lg:w-16 lg:h-16 text-blue-500 cursor-pointer" />
           }
           skill_name="MS Word"
         />
         <MarqueeIcon
           skill_icon={
-            <FaFileExcel className="w-16 h-16 text-green-500 cursor-pointer" />
+            <FaFileExcel className="w-8 h-8 lg:w-16 lg:h-16 text-green-500 cursor-pointer" />
           }
           skill_name="MS Excel"
         />
         <MarqueeIcon
           skill_icon={
-            <FaFilePowerpoint className="w-16 h-16 text-yellow-700 cursor-pointer" />
+            <FaFilePowerpoint className="w-8 h-8 lg:w-16 lg:h-16 text-yellow-700 cursor-pointer" />
           }
           skill_name="MS Powerpoint"
         />

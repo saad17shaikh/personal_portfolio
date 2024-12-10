@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="lg:hidden lg:py-6 md:py-4 py-2 sticky top-0 w-full bg-[#0e1217] z-50 text-primary">
+      <nav className="lg:hidden lg:py-6 md:py-4 py-4 sticky top-0 w-full bg-[#0e1217] z-50 text-primary">
         <section className="h-full w-full flex lg:px-10 md:px-8 px-4 items-center justify-between">
           <p>SS</p>
           <div className="hidden md:block">
@@ -90,18 +90,7 @@ const Navbar = () => {
                 })}
               </ul>
             </div>
-            <div className="flex flex-col gap-y-2 items-center justify-center">
-              <Link href={"/contact"} className="w-[90%]">
-                <button className="w-full bg-primary/10 hover:bg-primary/20 duration-200 text-primary font-semibold py-1 px-6 text-sm rounded-md uppercase tracking-wide">
-                  Inquire
-                </button>
-              </Link>
-              <Link href={"/freight_audit"} className="w-[90%]">
-                <button className="w-full bg-primary hover:bg-secondary duration-200 text-white py-1 px-6 text-sm rounded-md tracking-wide font-semibold uppercase">
-                  Sign In
-                </button>
-              </Link>
-            </div>
+           e
           </section>
 
         </section>

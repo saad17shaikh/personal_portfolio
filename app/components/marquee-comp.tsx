@@ -10,8 +10,8 @@ const MarqueeComp = ({ title, children }: MarqueCompProps) => {
   return (
     <div className="space-y-7">
       <p className="text-lg text-primary tracking-wider font-semibold border-b border-primary">{title}: </p>
-      <div className="w-3/4">
-        <Marquee className="w-1/2" speed={100} >
+      <div className="lg:w-3/4">
+        <Marquee className="" speed={100} >
           {children}
         </Marquee>
       </div>
