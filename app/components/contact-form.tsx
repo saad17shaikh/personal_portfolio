@@ -23,7 +23,7 @@ const ContactForm = () => {
     console.log({ values });
     toast.success(
       `Your message has been reached to me, Thank you for taking time and connecting with me!!!😊😊`,
-      { position: "top-right", duration: 10000, }
+      { position: "top-right", duration: 10000 }
     );
   };
   return (
@@ -53,7 +53,10 @@ const ContactForm = () => {
           key={"message"}
         />
         <div className="flex justify-end">
-          <button type="submit" className="bg-primary px-5 py-2 rounded-lg ">
+          <button
+            type="submit"
+            className="bg-primary px-5 py-2 rounded-lg text-sm   font-semibold tracking-wider flex justify-center items-center gap-2 hover:bg-secondary"
+          >
             Send Message
           </button>
         </div>

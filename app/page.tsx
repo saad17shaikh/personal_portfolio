@@ -10,6 +10,7 @@ import { FaTools } from "react-icons/fa";
 import SkillsSection from "./components/skill-section";
 import ContactForm from "./components/contact-form";
 import Navbar from "./components/navbar";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,9 +22,53 @@ export default function Home() {
         {/* Center section */}
         <section className=" min-h-screen w-full grid grid-cols-1 py-5 sm:px-4 gap-y-4">
           {/* Only visible in mobile view */}
-          {/* <div className=" lg:hidden bg-white h-[2rem]" >
-            sa
-          </div> */}
+          <div className=" lg:hidden">
+            <SectionWrapper
+              main_icon={<FiUser className="text-primary" />}
+              section_name="PERSONAL DETAILS"
+            >
+              <section className="space-y-7">
+                <p className="text-2xl  lg:text-4xl font-bold tracking-wide">
+                  PERSONAL <span className="text-primary">DETAILS</span>
+                </p>
+                <div className="flex flex-col gap-y-4 items-center justify-center">
+                  <div className="w-36 h-36 rounded-full  overflow-auto ring-2 ring-primary flex items-center justify-center p-5 bg-white relative">
+                    <Image alt="/saad-2.png" fill src={"/saad-2.png"} />
+                  </div>
+                  <div className="w-full border-b border-gray-500">
+                    <p className="pb-1 text-center  w-full font-semibold text-primary">
+                      Saad Shaikh
+                    </p>
+                    <p className="pb-1   text-center  w-full">Web Developer</p>
+                  </div>
+                </div>
+                <section className="space-y-2 text-sm">
+                  {/* <div className="flex">
+                    <p className="w-fit">Name:</p>
+                    <p className="text-primary font-semibold w-full text-right">
+                      Mohmad Saad Shaikh
+                    </p>
+                  </div> */}
+                  <div className="flex">
+                    <p className="w-fit ">Email:</p>
+                    <p className="text-primary w-full font-semibold text-right">
+                      saadshaikh1703@gmail.com
+                    </p>
+                  </div>
+                  <div className="flex">
+                    <p className="w-fit">Phone:</p>
+                    <p className="text-primary w-full font-semibold text-right">{`+1(415)766-1924`}</p>
+                  </div>
+                  <div className="flex">
+                    <p className="w-fit">Location:</p>
+                    <p className="text-primary font-semibold w-full text-right">
+                      San Francisco, CA
+                    </p>
+                  </div>
+                </section>
+              </section>
+            </SectionWrapper>
+          </div>
           {/* IntroSection */}
           <SectionWrapper
             main_icon={<FiUser className="text-primary" />}
@@ -58,10 +103,12 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <button className=" bg-primary px-10 rounded-full py-3 font-semibold tracking-wider flex justify-center items-center gap-2 hover:bg-secondary">
-                    Hire Me{" "}
-                    <FaLocationArrow className="w-5 h-5 font-semibold " />
-                  </button>
+                  <Link href={"/#contact"}>
+                    <button className=" bg-primary px-10 rounded-full py-3 font-semibold tracking-wider flex justify-center items-center gap-2 hover:bg-secondary">
+                      Hire Me{" "}
+                      <FaLocationArrow className="w-5 h-5 font-semibold " />
+                    </button>
+                  </Link>
                 </div>
               </div>
 
@@ -82,7 +129,7 @@ export default function Home() {
             section_name="ABOUT ME"
           >
             <main className="space-y-7">
-              <p className="text-4xl font-bold tracking-wide">
+              <p className="text-2xl lg:text-4xl font-bold tracking-wide">
                 ABOUT <span className="text-primary">ME</span>
               </p>
               <div className="pr-3">
@@ -132,7 +179,7 @@ export default function Home() {
             main_icon={<BsBriefcase className="text-primary" />}
           >
             <main className="space-y-7">
-              <p className="text-4xl font-bold tracking-wide">
+              <p className="text-2xl lg:text-4xl font-bold tracking-wide">
                 PROFESSIONAL <span className="text-primary">EXPERIENCE</span>
               </p>
               <main className="space-y-3">
@@ -192,7 +239,7 @@ export default function Home() {
             section_name="SKILLS"
           >
             <main className="space-y-7">
-              <p className="text-4xl font-bold tracking-wide">
+              <p className="text-2xl lg:text-4xl font-bold tracking-wide">
                 MY <span className="text-primary">SKILLS</span>
               </p>
               <SkillsSection />
@@ -204,7 +251,7 @@ export default function Home() {
             section_name="PROJECTS"
           >
             <main className="space-y-7">
-              <p className="text-4xl font-bold tracking-wide">
+              <p className="text-2xl lg:text-4xl font-bold tracking-wide">
                 PERSONAL <span className="text-primary">PROJECTS</span>
               </p>
 
@@ -216,8 +263,8 @@ export default function Home() {
             main_icon={<FaEnvelope className="w-4 h-4 text-primary" />}
             section_name="CONTACT ME"
           >
-            <main className="space-y-7">
-              <p className="text-4xl font-bold tracking-wide">
+            <main className="space-y-7" id="contact">
+              <p className="text-2xl lg:text-4xl font-bold tracking-wide">
                 CONTACT <span className="text-primary">ME</span>
               </p>
               <main className="">

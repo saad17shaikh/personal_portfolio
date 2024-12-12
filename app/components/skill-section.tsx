@@ -125,12 +125,6 @@ const SkillsSection = () => {
           }
           skill_name="Prisma ORM"
         />
-        {/* <MarqueeIcon
-          skill_icon={
-            <FaHtml5 className="w-8 h-8 lg:w-16 lg:h-16 text-orange-500 cursor-pointer" />
-          }
-          skill_name="Mongoose"
-        /> */}
       </MarqueeComp>
       {/* Other Skills */}
       <MarqueeComp title="OTHER SKILLS">

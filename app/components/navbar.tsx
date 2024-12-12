@@ -6,10 +6,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navigation = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Services", href: "/services" },
-    { name: "Features", href: "/contact" },
+    { name: "Personal Details", href: "/" },
+    { name: "Introduction", href: "/" },
+    { name: "About Me", href: "/" },
+    { name: "Experience", href: "/" },
+    { name: "Skills", href: "/" },
+    { name: "Contact", href: "/" },
   ];
 
   //
@@ -41,16 +43,7 @@ const Navbar = () => {
               })}
             </ul>
           </div>
-          <div className="gap-2 hidden md:flex">
-            <button className="bg-primary/10 hover:bg-primary/20 duration-200 text-primary font-semibold py-1 px-6 text-sm rounded-md uppercase tracking-wide">
-              Inquire
-            </button>
-            <Link href={"/freight_audit"}>
-              <button className="bg-primary hover:bg-secondary duration-200 text-white py-1 px-6 text-sm rounded-md tracking-wide font-semibold uppercase">
-                Sign In
-              </button>
-            </Link>
-          </div>
+
           <div className="md:hidden">
             <button onClick={() => setIsOpen(!isOpen)}>
               {!isOpen ? (
@@ -75,7 +68,7 @@ const Navbar = () => {
               </button>
             </div>
             <div>
-              <ul className="text-center space-y-3">
+              <ul className="text-center space-y-3 mt-5">
                 {navigation.map((item) => {
                   return (
                     <li key={item.name}>
@@ -90,9 +83,7 @@ const Navbar = () => {
                 })}
               </ul>
             </div>
-           e
           </section>
-
         </section>
       </nav>
     </>
