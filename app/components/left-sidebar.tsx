@@ -4,7 +4,7 @@ import { BsDownload } from "react-icons/bs";
 
 const LeftSidebar = () => {
   return (
-    <aside className="h-[93vh] sticky top-5 w-[25%] lg:block hidden">
+    <aside className="h-[55vh] sticky top-5 w-[25%] lg:block hidden">
       <section className="flex flex-col space-y-5 h-full w-full rounded-lg bg-white/5 py-5 px-2">
         {/* First Section with Image Name and designation */}
         <section className="w-full flex items-center justify-center flex-col space-y-2">
@@ -38,9 +38,11 @@ const LeftSidebar = () => {
           </table>
         </section>
         <section className="w-full flex items-center justify-center px-2">
-          <button className=" bg-primary text-sm w-full rounded-full py-2 font-semibold tracking-wider flex justify-center items-center gap-2 hover:bg-secondary">
-            Resume <BsDownload className="w-4 h-4 font-semibold" />
-          </button>
+          <a href="/saad-resume.pdf" download className="w-full">
+            <button className=" bg-primary text-sm w-full rounded-full py-2 font-semibold tracking-wider flex justify-center items-center gap-2 hover:bg-secondary">
+              Resume <BsDownload className="w-4 h-4 font-semibold" />
+            </button>
+          </a>
         </section>
       </section>
     </aside>

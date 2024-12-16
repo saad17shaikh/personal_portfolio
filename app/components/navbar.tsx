@@ -6,12 +6,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navigation = [
-    { name: "Personal Details", href: "/" },
-    { name: "Introduction", href: "/" },
-    { name: "About Me", href: "/" },
-    { name: "Experience", href: "/" },
-    { name: "Skills", href: "/" },
-    { name: "Contact", href: "/" },
+    { name: "Personal Details", href: "#personal-details" },
+    { name: "Introduction", href: "#introduction" },
+    { name: "About Me", href: "#about-me" },
+    { name: "Experience", href: "#experience" },
+    { name: "Skills", href: "#skills" },
+    { name: "Contact", href: "#contact" },
   ];
 
   //
@@ -27,7 +27,7 @@ const Navbar = () => {
       <nav className="lg:hidden lg:py-6 md:py-4 py-4 sticky top-0 w-full bg-[#0e1217] z-50 text-primary">
         <section className="h-full w-full flex lg:px-10 md:px-8 px-4 items-center justify-between">
           <p>SS</p>
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <ul className="md:flex  lg:gap-x-4 md:gap-x-2 hidden">
               {navigation.map((item) => {
                 return (
@@ -44,7 +44,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button onClick={() => setIsOpen(!isOpen)}>
               {!isOpen ? (
                 <BiMenu className="w-6 h-6" />

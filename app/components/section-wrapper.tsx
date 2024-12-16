@@ -4,17 +4,19 @@ interface SectionWrapperProps {
   children: React.ReactNode;
   main_icon: React.ReactNode;
   section_name: string;
+  section_id: string;
 }
 
 const SectionWrapper = ({
   children,
   main_icon,
   section_name,
+  section_id,
 }: SectionWrapperProps) => {
   return (
     <main
       className=" bg-white/5 rounded-lg py-6 px-4 sm:py-12 sm:px-8 space-y-5"
-      id={section_name}
+      id={section_id}
     >
       <section className="w-fit rounded-3xl flex gap-2 p-2 px-6 items-center justify-center border border-gray-700">
         {main_icon}

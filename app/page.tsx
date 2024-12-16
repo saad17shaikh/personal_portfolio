@@ -4,7 +4,7 @@ import SectionWrapper from "./components/section-wrapper";
 import { FiUser, FiUsers } from "react-icons/fi";
 import { PiListChecks } from "react-icons/pi";
 import LeftSidebar from "./components/left-sidebar";
-import { BsBriefcase } from "react-icons/bs";
+import { BsBriefcase, BsDownload } from "react-icons/bs";
 import { FaEnvelope, FaLocationArrow } from "react-icons/fa6";
 import { FaTools } from "react-icons/fa";
 import SkillsSection from "./components/skill-section";
@@ -26,6 +26,7 @@ export default function Home() {
             <SectionWrapper
               main_icon={<FiUser className="text-primary" />}
               section_name="PERSONAL DETAILS"
+              section_id="personal-details"
             >
               <section className="space-y-7">
                 <p className="text-2xl  lg:text-4xl font-bold tracking-wide">
@@ -65,6 +66,13 @@ export default function Home() {
                       San Francisco, CA
                     </p>
                   </div>
+                  <div>
+                    <a href="/saad-resume.pdf" className="w-full mt-2" download>
+                      <button className=" bg-primary text-sm w-full rounded-full py-2 font-semibold tracking-wider flex justify-center items-center gap-2 hover:bg-secondary">
+                        Resume <BsDownload className="w-4 h-4 font-semibold" />
+                      </button>
+                    </a>
+                  </div>
                 </section>
               </section>
             </SectionWrapper>
@@ -73,6 +81,7 @@ export default function Home() {
           <SectionWrapper
             main_icon={<FiUser className="text-primary" />}
             section_name="INTRODUCTION"
+            section_id="introduction"
           >
             <section className="grid  sm:grid-cols-2 gap-5">
               <div className="space-y-7">
@@ -127,6 +136,7 @@ export default function Home() {
           <SectionWrapper
             main_icon={<FiUsers className="text-primary" />}
             section_name="ABOUT ME"
+            section_id="about-me"
           >
             <main className="space-y-7">
               <p className="text-2xl lg:text-4xl font-bold tracking-wide">
@@ -177,6 +187,7 @@ export default function Home() {
           <SectionWrapper
             section_name="Experience"
             main_icon={<BsBriefcase className="text-primary" />}
+            section_id="experience"
           >
             <main className="space-y-7">
               <p className="text-2xl lg:text-4xl font-bold tracking-wide">
@@ -184,10 +195,10 @@ export default function Home() {
               </p>
               <main className="space-y-3">
                 <div className="flex justify-between border-b border-gray-500">
-                  <p className="text-xl tracking-wider font-semibold text-primary">
+                  <p className="lg:text-xl tracking-wider font-semibold text-primary">
                     SOFTWARE ENGINEER
                   </p>
-                  <p className="text-sm text-primary">NOV 2023 - NOV 2024</p>
+                  <p className="text-xs lg:text-sm text-primary">NOV 2023 - NOV 2024</p>
                 </div>
                 <p className="text-xl tracking-wider font-semibold">
                   TechlogixIT Services
@@ -234,9 +245,12 @@ export default function Home() {
               </main>
             </main>
           </SectionWrapper>
+
+          {/* Skills Section */}
           <SectionWrapper
             main_icon={<FaTools className="w-4 h-4 text-primary" />}
             section_name="SKILLS"
+            section_id="skills"
           >
             <main className="space-y-7">
               <p className="text-2xl lg:text-4xl font-bold tracking-wide">
@@ -262,6 +276,7 @@ export default function Home() {
           <SectionWrapper
             main_icon={<FaEnvelope className="w-4 h-4 text-primary" />}
             section_name="CONTACT ME"
+            section_id="contact"
           >
             <main className="space-y-7" id="contact">
               <p className="text-2xl lg:text-4xl font-bold tracking-wide">

@@ -6,7 +6,7 @@ import { SiJavascript } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa6";
 import { RiNextjsFill } from "react-icons/ri";
-import Image from "next/image";
+// import Image from "next/image";
 import { FaNode } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
