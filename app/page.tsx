@@ -173,12 +173,12 @@ export default function Home() {
                 </div>
                 <div className="space-y-2">
                   <p className="font-bold text-3xl text-primary">5+</p>
-                  <p>Years of Experience</p>
+                  <p>Projects</p>
                 </div>
-                <div className="space-y-2">
+                {/* <div className="space-y-2">
                   <p className="font-bold text-3xl text-primary">1+</p>
                   <p>Years of Experience</p>
-                </div>
+                </div> */}
               </div>
             </main>
           </SectionWrapper>
